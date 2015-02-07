@@ -93,6 +93,16 @@
 		D86484EE1A71A85500CAD214 /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = D86484EC1A71A85500CAD214 /* fondo.png */; };
 		D873886F1A73E4D900FA4177 /* nivel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D873886D1A73E4D900FA4177 /* nivel.cpp */; };
 		D87388701A73E4D900FA4177 /* nivel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D873886D1A73E4D900FA4177 /* nivel.cpp */; };
+		D8E94FBF1A861C8F00F7D41F /* ipad in Resources */ = {isa = PBXBuildFile; fileRef = D8E94FBA1A861C8F00F7D41F /* ipad */; };
+		D8E94FC01A861C8F00F7D41F /* ipad in Resources */ = {isa = PBXBuildFile; fileRef = D8E94FBA1A861C8F00F7D41F /* ipad */; };
+		D8E94FC11A861C8F00F7D41F /* ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = D8E94FBB1A861C8F00F7D41F /* ipadhd */; };
+		D8E94FC21A861C8F00F7D41F /* ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = D8E94FBB1A861C8F00F7D41F /* ipadhd */; };
+		D8E94FC31A861C8F00F7D41F /* iphone in Resources */ = {isa = PBXBuildFile; fileRef = D8E94FBC1A861C8F00F7D41F /* iphone */; };
+		D8E94FC41A861C8F00F7D41F /* iphone in Resources */ = {isa = PBXBuildFile; fileRef = D8E94FBC1A861C8F00F7D41F /* iphone */; };
+		D8E94FC51A861C8F00F7D41F /* iphonehd in Resources */ = {isa = PBXBuildFile; fileRef = D8E94FBD1A861C8F00F7D41F /* iphonehd */; };
+		D8E94FC61A861C8F00F7D41F /* iphonehd in Resources */ = {isa = PBXBuildFile; fileRef = D8E94FBD1A861C8F00F7D41F /* iphonehd */; };
+		D8E94FC71A861C8F00F7D41F /* iphonehd5 in Resources */ = {isa = PBXBuildFile; fileRef = D8E94FBE1A861C8F00F7D41F /* iphonehd5 */; };
+		D8E94FC81A861C8F00F7D41F /* iphonehd5 in Resources */ = {isa = PBXBuildFile; fileRef = D8E94FBE1A861C8F00F7D41F /* iphonehd5 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -304,6 +314,11 @@
 		D86484EC1A71A85500CAD214 /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo.png; sourceTree = "<group>"; };
 		D873886D1A73E4D900FA4177 /* nivel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = nivel.cpp; path = ../Classes/nivel.cpp; sourceTree = "<group>"; };
 		D873886E1A73E4D900FA4177 /* nivel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nivel.h; path = ../Classes/nivel.h; sourceTree = "<group>"; };
+		D8E94FBA1A861C8F00F7D41F /* ipad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ipad; sourceTree = "<group>"; };
+		D8E94FBB1A861C8F00F7D41F /* ipadhd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ipadhd; sourceTree = "<group>"; };
+		D8E94FBC1A861C8F00F7D41F /* iphone */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iphone; sourceTree = "<group>"; };
+		D8E94FBD1A861C8F00F7D41F /* iphonehd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iphonehd; sourceTree = "<group>"; };
+		D8E94FBE1A861C8F00F7D41F /* iphonehd5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iphonehd5; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,6 +509,11 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D8E94FBA1A861C8F00F7D41F /* ipad */,
+				D8E94FBB1A861C8F00F7D41F /* ipadhd */,
+				D8E94FBC1A861C8F00F7D41F /* iphone */,
+				D8E94FBD1A861C8F00F7D41F /* iphonehd */,
+				D8E94FBE1A861C8F00F7D41F /* iphonehd5 */,
 				D860D9471A7657C400512C35 /* bloque.png */,
 				D860D9441A76472800512C35 /* bloque.jpg */,
 				D86484EC1A71A85500CAD214 /* fondo.png */,
@@ -687,12 +707,15 @@
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				D86484E81A71A54F00CAD214 /* salir1.png in Resources */,
+				D8E94FC31A861C8F00F7D41F /* iphone in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
+				D8E94FC71A861C8F00F7D41F /* iphonehd5 in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
+				D8E94FC11A861C8F00F7D41F /* ipadhd in Resources */,
 				D86484D31A71A53C00CAD214 /* nuevojuego1.png in Resources */,
 				D86484E41A71A54F00CAD214 /* PANACEA1.jpg in Resources */,
 				D860D9451A76472800512C35 /* bloque.jpg in Resources */,
@@ -706,6 +729,8 @@
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
+				D8E94FC51A861C8F00F7D41F /* iphonehd in Resources */,
+				D8E94FBF1A861C8F00F7D41F /* ipad in Resources */,
 				D860D9481A7657C400512C35 /* bloque.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,15 +741,20 @@
 			files = (
 				D86484D41A71A53C00CAD214 /* nuevojuego1.png in Resources */,
 				D86484E51A71A54F00CAD214 /* PANACEA1.jpg in Resources */,
+				D8E94FC01A861C8F00F7D41F /* ipad in Resources */,
 				D86484EB1A71A54F00CAD214 /* salir2.png in Resources */,
 				D86484E71A71A54F00CAD214 /* pause.png in Resources */,
+				D8E94FC81A861C8F00F7D41F /* iphonehd5 in Resources */,
 				D860D9461A76472800512C35 /* bloque.jpg in Resources */,
 				5087E75317EB910900C73F5D /* CloseNormal.png in Resources */,
+				D8E94FC21A861C8F00F7D41F /* ipadhd in Resources */,
 				D86484E31A71A54F00CAD214 /* opciones2.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				D86484EE1A71A85500CAD214 /* fondo.png in Resources */,
 				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
 				D86484E11A71A54F00CAD214 /* opciones 1.png in Resources */,
+				D8E94FC41A861C8F00F7D41F /* iphone in Resources */,
+				D8E94FC61A861C8F00F7D41F /* iphonehd in Resources */,
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
 				D86484E91A71A54F00CAD214 /* salir1.png in Resources */,
 				D86484DF1A71A54F00CAD214 /* nuevojuego2.png in Resources */,
