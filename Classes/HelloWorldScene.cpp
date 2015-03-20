@@ -32,56 +32,48 @@ bool HelloWorld::init()
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-
-    /////////////////////////////
-    // 2. add a menu item with "X" image, which is clicked to quit the program
-    //    you may modify it.
-
-    // add a "close" icon to exit the progress. it's an autorelease object
     
-    auto nuevo = MenuItemImage::create("nuevojuego1.png", "nuevojuego2.png",
+    auto nuevo = MenuItemImage::create("iniciomenu/new game.png", "iniciomenu/new game selec.png",
                                        CC_CALLBACK_1(HelloWorld::InicioJuego, this ));
     
-   // nuevo->setPosition(Vec2(origin.x + visibleSize.width - nuevo->getContentSize().width/2 ,
-     //                       origin.y + nuevo->getContentSize().height/2));
-    
     auto closeItem = MenuItemImage::create(
-                                           "salir1.png",
-                                           "salir2.png",
+                                           "iniciomenu/configuration.png",
+                                           "iniciomenu/configuration selec.png",
                                            CC_CALLBACK_1(HelloWorld::menuCloseCallback, this));
 
     // create menu, it's an autorelease object
     auto menu = Menu::create(nuevo, closeItem, NULL);
-    menu->setPosition( ccp(visibleSize.width / 2, visibleSize.height / 2));
+    menu->setPosition( Vec2(origin.x + visibleSize.width / 2,origin.y + visibleSize.height / 2));
     menu->alignItemsVertically();
     this->addChild(menu, 1);
 
-    /////////////////////////////
-    // 3. add your codes below...
-
-    // add a label shows "Hello World"
-    // create and initialize a label
-    
-    auto label = LabelTTF::create("Hello Ulises", "Arial", 24);
-    
-    // position the label on the center of the screen
-    label->setPosition(Vec2(origin.x + visibleSize.width/2,
-                            origin.y + visibleSize.height - label->getContentSize().height));
-
-    // add the label as a child to this layer
-    this->addChild(label, 1);
-
-    // add "HelloWorld" splash screen"
-    auto sprite = Sprite::create("fondo.png");
+       // add "HelloWorld" splash screen"
+    auto sprite = Sprite::create("iniciomenu/fondo menu.png");
 
     // position the sprite on the center of the screen
-    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+    sprite -> setAnchorPoint(Vec2::ZERO);
+        
+        // position the sprite on the center of the screen
+    sprite->setPosition(Vec2(0,0));
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
         
+    auto logo = Sprite::create("iniciomenu/titulo menu.png");
+        logo->setAnchorPoint(Vec2::ZERO);
+        logo->setPosition(Vec2(0,0));
+        this->addChild(logo, 1);
         
-      // aca poner logo  menu->setPosition( ccp((visibleSize.width / 2)*1.8 , (visibleSize.height / 2)*0.2));
+     auto close = MenuItemImage::create(
+                                        "iniciomenu/exit.png",
+                                        "iniciomenu/exit selec.png",
+                                        CC_CALLBACK_1(HelloWorld::menuCloseCallback, this));
+        
+        // create menu, it's an autorelease object
+        auto exit = Menu::create(close, NULL);
+        exit->setAnchorPoint(Vec2::ZERO);
+        exit->setPosition( Vec2(visibleSize.width * 0.88, visibleSize.height * 0.06));
+        this->addChild(exit, 1);
     
     return true;
 }
@@ -103,8 +95,7 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 
 void HelloWorld::InicioJuego( cocos2d::Ref* sender)
 {
-    auto scene = nivel::createScene();
-    Director::getInstance()->replaceScene( TransitionFade::create( TRANSITION_TIME, scene));
+        auto scene = nivel::createScene();
+        Director::getInstance()->replaceScene( TransitionFade::create( TRANSITION_TIME, scene));
 }
-
 
